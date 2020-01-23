@@ -56,10 +56,11 @@ const SearchBox = ({
 }) => {
   return (
     <SearchForm onSubmit={onSearchFormSubmit}>
-      <SearchButton type="submit">
+      <SearchButton title="Submit Filter Request" type="submit">
         <SearchIcon />
       </SearchButton>
       <SearchInput
+        title="Search A Country By Name"
         type="text"
         value={searchValue}
         onChange={onSearchValueChange}
